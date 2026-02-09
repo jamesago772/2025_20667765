@@ -1,0 +1,22 @@
+# Windows junk
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+*.swp
+
+# Build outputs
+*.exe
+*.dll
+*.o
+*.obj
+*.class
+*.out
+
+# Archives
+*.zip
+*.rar
+
+# Logs
+*.log
