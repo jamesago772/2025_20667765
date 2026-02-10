@@ -1,0 +1,16 @@
+CXX=cl
+CXXFLAGS=/EHsc
+
+all: calc.exe
+
+calc.exe: calc.obj adder.obj
+	link calc.obj adder.obj
+
+calc.obj: calc.cpp adder.h
+	$(CXX) $(CXXFLAGS) /c calc.cpp
+
+adder.obj: adder.cpp adder.h
+	$(CXX) $(CXXFLAGS) /c adder.cpp
+
+clean:
+	del *.obj calc.exe
