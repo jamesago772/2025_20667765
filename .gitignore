@@ -1,22 +1,10 @@
-# Windows junk
-Thumbs.db
-Desktop.ini
+# CMake / Visual Studio
+build/
+build_*/
+.vs/
 
-# Editors
-.vscode/
-*.swp
-
-# Build outputs
+# Windows binaries
 *.exe
 *.dll
-*.o
-*.obj
-*.class
-*.out
-
-# Archives
-*.zip
-*.rar
-
-# Logs
-*.log
+*.lib
+*.exp
