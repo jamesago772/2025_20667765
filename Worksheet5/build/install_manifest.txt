@@ -1,4 +1,0 @@
-C:/Users/agorm/2025_20667765/Worksheet5/build/_CPack_Packages/win64/NSIS/worksheet5-calc-1.0.0-win64/bin/calc.exe
-C:/Users/agorm/2025_20667765/Worksheet5/build/_CPack_Packages/win64/NSIS/worksheet5-calc-1.0.0-win64/lib/maths.lib
-C:/Users/agorm/2025_20667765/Worksheet5/build/_CPack_Packages/win64/NSIS/worksheet5-calc-1.0.0-win64/bin/maths.dll
-C:/Users/agorm/2025_20667765/Worksheet5/build/_CPack_Packages/win64/NSIS/worksheet5-calc-1.0.0-win64/include/adder.h
