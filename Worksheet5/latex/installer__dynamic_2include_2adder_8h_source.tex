@@ -1,0 +1,19 @@
+\doxysection{adder.\+h}
+\hypertarget{installer__dynamic_2include_2adder_8h_source}{}\label{installer__dynamic_2include_2adder_8h_source}\index{installer\_dynamic/include/adder.h@{installer\_dynamic/include/adder.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\ \ \#ifdef\ maths\_EXPORTS}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#define\ MATHS\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#define\ MATHS\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \#define\ MATHS\_API}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ MATHS\_API\ \textcolor{keywordtype}{int}\ add(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b);}
+
+\end{DoxyCode}

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/agorm/2025_20667765/Worksheet4/Calc/CMakeLists.txt
+  calc.cpp
+calc.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) int __cdecl add(int,int)" (__imp_?add@@YAHHH@Z) referenced in function main
+C:\Users\agorm\2025_20667765\Worksheet4\Calc\build\Debug\calc.exe : fatal error LNK1120: 1 unresolved externals

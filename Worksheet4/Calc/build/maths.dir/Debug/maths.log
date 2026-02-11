@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/Users/agorm/2025_20667765/Worksheet4/Calc/CMakeLists.txt
+  adder.cpp
+C:\Users\agorm\2025_20667765\Worksheet4\Calc\adder.cpp(3,5): warning C4273: 'add': inconsistent dll linkage
+      C:\Users\agorm\2025_20667765\Worksheet4\Calc\adder.h(10,15):
+      see previous definition of 'add'
+  
+  maths.vcxproj -> C:\Users\agorm\2025_20667765\Worksheet4\Calc\build\Debug\maths.lib

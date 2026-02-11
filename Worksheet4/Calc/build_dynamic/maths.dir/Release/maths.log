@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/agorm/2025_20667765/Worksheet4/Calc/CMakeLists.txt
+  adder.cpp
+     Creating library C:/Users/agorm/2025_20667765/Worksheet4/Calc/build_dynamic/Release/maths.lib and object C:/Users/agorm/2025_20667765/Worksheet4/Calc/build_dynamic/Release/maths.exp
+  maths.vcxproj -> C:\Users\agorm\2025_20667765\Worksheet4\Calc\build_dynamic\Release\maths.dll
