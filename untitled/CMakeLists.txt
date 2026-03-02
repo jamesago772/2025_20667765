@@ -30,6 +30,9 @@ qt_add_executable(untitled
     ModelPartList.cpp
     ModelPartList.h
     icons.qrc
+    optionDialog.cpp
+    optionDialog.h
+    optionDialog.ui
 )
        
 
