@@ -29,6 +29,7 @@ qt_add_executable(untitled
     ModelPart.h
     ModelPartList.cpp
     ModelPartList.h
+    icons.qrc
 )
        
 
