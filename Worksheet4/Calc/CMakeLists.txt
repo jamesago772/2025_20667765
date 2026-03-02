@@ -11,6 +11,16 @@ endif()
 
 # executable
 add_executable(calc calc.cpp)
+add_executable(${untitled}
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+    ModelPart.cpp
+    ModelPart.h
+    ModelPartList.cpp
+    ModelPartList.h
+)
 
 # link exe to library
 target_link_libraries(calc maths)

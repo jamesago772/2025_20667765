@@ -1,0 +1,30 @@
+[33m1c61c57[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Worksheet 6 exercises completed
+[33me4aa8f0[m Add GitHub Action to build + deploy Doxygen
+[33md87669d[m Publish Doxygen docs to GitHub Pages
+[33m19275b0[m[33m ([m[1;33mtag: [m[1;33mv5-installer[m[33m)[m Worksheet 5: add dynamic installer bin and lib
+[33m382a7fc[m Worksheet 5: dynamic installer layout (bin/lib/include)
+[33m184860e[m Worksheet 5: add Doxygen configuration
+[33m6912eeb[m Worksheet 5: installer layout (bin lib include)
+[33m614d187[m Worksheet 5: add Doxygen configuration
+[33m00b7ea9[m Worksheet 5: ignore Doxygen latex output
+[33m4367784[m Worksheet 5: simplify adder.h (no DLL macros)
+[33m9f71653[m Worksheet 5: add Doxyfile and ignore generated html
+[33m67e5ddc[m Worksheet 5: Makefile build with nmake
+[33mfaec66e[m[33m ([m[1;33mtag: [m[1;33mworksheet4-static[m[33m, [m[1;33mtag: [m[1;33mworksheet4-dynamic[m[33m)[m Add release folder structure placeholders
+[33m18b8399[m Worksheet 4: static and dynamic release directories
+[33m01fbd5f[m Worksheet 4: CMake hello + Calc (static and dynamic)
+[33m7621d38[m Ignore build and Visual Studio files
+[33mbdd273f[m[33m ([m[1;33mtag: [m[1;33mworksheet3-static[m[33m, [m[1;33mtag: [m[1;33mworksheet3-dynamic[m[33m)[m Merge branch 'master' of https://github.com/jamesago772/2025_20667765
+[33m27407ab[m Worksheet 3: multiple source files (calc + adder)
+[33mb0a5da5[m Worksheet 3: hello world program
+[33m9729350[m Resolved push/pull conflict
+[33m6ba2310[m User 2 wants it that way
+[33mad0999c[m User 1 wants it this way
+[33mf0e1284[m User 1 update
+[33m7a2f7f5[m Add .gitignore
+[33ma039351[m Resolved merge conflict in README
+[33m07162b1[m Master modified README
+[33m85727cf[m[33m ([m[1;32mdevel[m[33m)[m Devel modified README
+[33m5532e70[m Add git cheat sheet
+[33mb1dbcb3[m Added hi_and_date script and updated README
+[33me503f26[m Add README
