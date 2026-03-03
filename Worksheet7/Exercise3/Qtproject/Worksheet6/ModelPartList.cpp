@@ -1,4 +1,4 @@
-/**     @file ModelPartList.h
+﻿/**     @file ModelPartList.h
   *
   *     EEEE2076 - Software Engineering & VR Project
   *
@@ -9,7 +9,7 @@
 
 #include "ModelPartList.h"
 #include "ModelPart.h"
-
+#include <QFileInfo>
 ModelPartList::ModelPartList( const QString& data, QObject* parent ) : QAbstractItemModel(parent) {
     /* Have option to specify number of visible properties for each item in tree - the root item
      * acts as the column headers
@@ -126,21 +126,44 @@ QModelIndex ModelPartList::appendChild(QModelIndex& parent, const QList<QVariant
         parentPart = static_cast<ModelPart*>(parent.internalPointer());
     else {
         parentPart = rootItem;
-        parent = createIndex(0, 0, rootItem );
+        parent = createIndex(0, 0, rootItem);
     }
 
-    beginInsertRows( parent, rowCount(parent), rowCount(parent) ); 
+    int insertRow = parentPart->childCount();   // ✅ correct row number for new child
 
-    ModelPart* childPart = new ModelPart( data, parentPart );
+    beginInsertRows(parent, insertRow, insertRow);
 
+    ModelPart* childPart = new ModelPart(data, parentPart);
     parentPart->appendChild(childPart);
-
-    QModelIndex child = createIndex(0, 0, childPart);
 
     endInsertRows();
 
     emit layoutChanged();
 
-    return child;
+    // ✅ return QModelIndex pointing at the newly inserted row
+    return createIndex(insertRow, 0, childPart);
+
+
+
+
+}
+ModelPart* ModelPartList::addPart(const QString& filename, const QModelIndex& parentIndex)
+{
+    // Create the display name from the file (e.g. "gear.stl")
+    QFileInfo fi(filename);
+    QString partName = fi.fileName();
+
+    // Column 0 = Part name, Column 1 = Visible?
+    QList<QVariant> rowData;
+    rowData << partName << "true";
+
+    // appendChild expects a NON-const QModelIndex reference, so make a copy
+    QModelIndex parentCopy = parentIndex;
+    QModelIndex newIndex = appendChild(parentCopy, rowData);
+
+    if (!newIndex.isValid())
+        return nullptr;
+
+    return static_cast<ModelPart*>(newIndex.internalPointer());
 }
 
